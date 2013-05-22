@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('ngBbApp')
-  .factory('Phone', function () {
+  .factory('Phone', [function () {
     // Service logic
     // ...
 
@@ -13,4 +13,4 @@ angular.module('ngBbApp')
         return meaningOfLife;
       }
     };
-  });
+  }]);
