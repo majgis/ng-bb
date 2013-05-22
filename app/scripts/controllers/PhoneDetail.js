@@ -1,10 +1,10 @@
 'use strict';
 
 angular.module('ngBbApp')
-  .controller('PhoneDetailCtrl', function ($scope) {
+  .controller('PhoneDetailCtrl', ["$scope", function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  });
+  }]);
