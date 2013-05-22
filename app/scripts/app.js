@@ -2,11 +2,11 @@
 
 angular.module('ngBbApp', ['ngResource'])
     .config([
-        "$routeProvider", "PhoneListCtrl", "PhoneDetailCtrl",
-        function ($routeProvider, PhoneListCtrl, PhoneDetailCtrl) {
+        "$routeProvider",
+        function ($routeProvider) {
             $routeProvider
-                .when('/phones', {templateUrl: 'partials/phone-list.html', controller: PhoneListCtrl})
-                .when('/phones/:phoneId', {templateUrl: 'partials/phone-detail.html', controller: PhoneDetailCtrl})
+                .when('/phones', {templateUrl: 'views/phone-list.html', controller: "PhoneListCtrl"})
+                .when('/phones/:phoneId', {templateUrl: 'views/phone-detail.html', controller: "PhoneDetailCtrl"})
                 .otherwise({redirectTo: '/phones'});
         }
     ]);
