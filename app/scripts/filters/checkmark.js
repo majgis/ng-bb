@@ -1,10 +1,10 @@
 'use strict';
 
 angular.module('ngBbApp')
-    .filter('checkmarkFilter', [
+    .filter('checkmark', [
         function () {
             return function (input) {
-                return 'phonecat filter: ' + input;
+                return input ? '\u2713' : '\u2718';
             };
         }
     ]);
