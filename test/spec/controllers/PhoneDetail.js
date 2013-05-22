@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('Controller: PhoneDetailCtrl', function () {
 
   // load the controller's module
   beforeEach(module('ngBbApp'));
 
-  var MainCtrl,
+  var PhoneDetailCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
+    PhoneDetailCtrl = $controller('PhoneDetailCtrl', {
       $scope: scope
     });
   }));
