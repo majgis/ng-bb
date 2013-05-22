@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('ngBbApp')
-  .filter('phonecat', [function () {
+  .filter('checkmarkFilter', [function () {
     return function (input) {
       return 'phonecat filter: ' + input;
     };
