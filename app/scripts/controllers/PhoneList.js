@@ -2,8 +2,8 @@
 
 angular.module('ngBbApp')
     .controller('PhoneListCtrl', [
-        "$scope",
-        function ($scope) {
+        "$scope", "Phone",
+        function ($scope, Phone) {
             $scope.phones = Phone.query();
             $scope.orderProp = 'age';
         }
