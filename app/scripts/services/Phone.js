@@ -1,16 +1,12 @@
 'use strict';
 
 angular.module('ngBbApp')
-  .factory('Phone', [function () {
-    // Service logic
-    // ...
+    .factory('Phone', [
+        "$resource",
+        function ($resource) {
 
-    var meaningOfLife = 42;
-
-    // Public API here
-    return {
-      someMethod: function () {
-        return meaningOfLife;
-      }
-    };
-  }]);
+            return $resource('phones/:phoneId.json', {}, {
+                query: {method: 'GET', params: {phoneId: 'phones'}, isArray: true}
+            });
+        }
+    ]);

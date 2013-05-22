@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ngBbApp', [])
+angular.module('ngBbApp', ['ngResource'])
     .config([
         "$routeProvider", "PhoneListCtrl", "PhoneDetailCtrl",
         function ($routeProvider, PhoneListCtrl, PhoneDetailCtrl) {
